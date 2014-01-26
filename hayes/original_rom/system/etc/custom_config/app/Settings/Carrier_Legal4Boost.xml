@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Carrier_Legal>   
+ <English>	
+	<paragraph index="1">Boost Mobile Privacy Alert:  If you use a 3rd party app, it may directly collect your personal information or require Boost 
+Mobile to disclose your personal information, including location information (where applicable), to the app provider or some other 3rd party. 
+</paragraph> 
+	<paragraph index="2">Which Privacy Policy Applies?  Boost Mobile's Privacy Policy and Terms of Use do not apply to apps on your handset that are 
+solely provided by 3rd parties.  The 3rd party’s policies apply to your use of this app.  </paragraph> 
+	<paragraph index="3">Where Can I Find More Information About the 3rd Party’s Policies?  Check the app’s terms of use and/or the app provider’s 
+policies for more information about how the app will collect, access, use and disclose your information.  Privacy Policies, Terms of Use and other consumer notices MAY BE available on the provider's website.  Be sure you are comfortable with the policies before you use an app.</paragraph> 
+	<paragraph index="4"> Where Can I Find Boost Mobile’s Privacy Policy?  Separately, if you have questions about Boost Mobile's Privacy Policy, 
+please visit Boost Mobile.com and click on the “Privacy Policy" link.  </paragraph> 		
+ </English> 
+ <Spanish>
+    <paragraph index="1">Alerta de Confidencialidad de Boost Mobile:  Si utilizas la aplicación de un tercero, éste podría recolectar tu información 
+personal o exigirle a Boost Mobile que le divulgue tu información personal, incluyendo información sobre tu ubicación (en donde sea pertinente), al proveedor de la aplicación o a algún otro tercero.</paragraph> 
+	<paragraph index="2">¿Cuál es la Política de Confidencialidad que se aplica?  La Política de Confidencialidad y los Términos de Uso de Boost 
+Mobile no cubren las aplicaciones de tu equipo que sean suministradas exclusivamente por terceros.  Las políticas del tercero son las que cubren tu 
+uso de dicha aplicación.   </paragraph> 
+	<paragraph index="3">¿En dónde puedo encontrar mayor más información acerca de las políticas del tercero?  Consulta los términos de uso de la 
+aplicación y/o las políticas del proveedor de la aplicación para a fin de obtener más mayor información sobre la manera en que la aplicación 
+recolectará, accederá, utilizará y divulgará tu información.  Las Políticas de Confidencialidad, Términos de Uso y otras notificaciones al 
+consumidor PODRÍAN ESTAR disponibles en el sitio web del proveedor.  Antes de usar una aplicación, esté seguro que usted está cómodo con las 
+políticas antes que usted use la aplicación.  </paragraph> 
+	<paragraph index="4">¿En dónde puedo encontrar la Política de Confidencialidad de Boost Mobile?  Por separado, si tienes alguna pregunta acerca 
+de la Política de Confidencialidad de Boost Mobile, por favor visita Boost Mobile.com y haz clic en el vínculo de la Política de Confidencialidad 
+(“Privacy Policy").  </paragraph> 
+ </Spanish>	
+</Carrier_Legal>

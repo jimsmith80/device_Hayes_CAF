@@ -12,7 +12,7 @@ $(call inherit-product, build/target/product/full.mk)
 
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product, $(LOCAL_PATH)/prebuilts/lib/modules/modules.mk)
+$(call inherit-product, device/zte/hayes/prebuilt.mk)
 
 #PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
@@ -43,7 +43,7 @@ $(call inherit-product, $(LOCAL_PATH)/prebuilts/lib/modules/modules.mk)
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml 
-
+    
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
     system/bluetooth/data/audio.conf:system/etc/bluetooth/audio.conf \
@@ -52,18 +52,6 @@ PRODUCT_COPY_FILES += \
     system/bluetooth/data/main.le.conf:system/etc/bluetooth/main.conf \
     #system/bluetooth/data/iop_device_list.conf:system/etc/bluetooth/iop_device_list.conf 
     
-# Keyboard/Touchscreen
-PRODUCT_COPY_FILES += \
-        $(LOCAL_PATH)/prebuilts/usr/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-        $(LOCAL_PATH)/prebuilts/usr/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/atmel-touchscreen.kl:system/usr/keylayout/atmel-touchscreen.kl \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/Fts-touchscreen.kl:system/usr/keylayout/Fts-touchscreen.kl \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/msm8960-snd-card_Button_Jack.kl:system/usr/keylayout/msm8960-snd-card_Button_Jack.kl \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-        $(LOCAL_PATH)/prebuilts/usr/keylayout/syna-touchscreen.kl:system/usr/keylayout/syna-touchscreen.kl \
-	$(LOCAL_PATH)/prebuilts/usr/idc/syna-touchscreen.idc:system/usr/idc/syna-touchscreen.idc
 
 PRODUCT_PACKAGES += \
     battery_monitor \
@@ -79,9 +67,6 @@ PRODUCT_PACKAGES += Galaxy4
 #fstab.msm8960
 PRODUCT_PACKAGES += fstab.msm8960
 
-# sensors
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/prebuilts/bin/akmd8962_new:system/bin/akmd8962_new 
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hayes

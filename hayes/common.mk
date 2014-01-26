@@ -1,23 +1,7 @@
 # Board platforms lists to be used for
 # TARGET_BOARD_PLATFORM specific featurization
-#QCOM_BOARD_PLATFORMS := msm7627_surf
-#QCOM_BOARD_PLATFORMS += msm7627_6x
-#QCOM_BOARD_PLATFORMS += msm7627a
-#QCOM_BOARD_PLATFORMS += msm7630_surf
-#QCOM_BOARD_PLATFORMS += msm7630_fusion
-QCOM_BOARD_PLATFORMS += msm8660
+
 QCOM_BOARD_PLATFORMS += msm8960
-#QCOM_BOARD_PLATFORMS += copper
-
-#MSM7K_BOARD_PLATFORMS := msm7630_surf
-#MSM7K_BOARD_PLATFORMS += msm7630_fusion
-#MSM7K_BOARD_PLATFORMS += msm7627_surf
-#MSM7K_BOARD_PLATFORMS += msm7627_6x
-#MSM7K_BOARD_PLATFORMS += msm7627a
-#MSM7K_BOARD_PLATFORMS += msm7k
-
-QSD8K_BOARD_PLATFORMS := qsd8k
-
 
 # Below projects/packages with LOCAL_MODULEs will be used by
 # PRODUCT_PACKAGES to build LOCAL_MODULEs that are tagged with
@@ -27,7 +11,6 @@ QSD8K_BOARD_PLATFORMS := qsd8k
 
 #ALSA
 ALSA_HARDWARE := alsa.msm8960
-
 ALSA_UCM := snd_soc_msm
 ALSA_UCM += snd_soc_msm_2x
 ALSA_UCM += snd_soc_msm_2x_Fusion3
@@ -36,23 +19,9 @@ ALSA_UCM += snd_soc_msm_Sitar
 #ANGLE
 ANGLE := libangle
 
-#AUDIO_HARDWARE := audio.primary.mpq8064
 AUDIO_HARDWARE += audio.primary.msm8960
-#AUDIO_HARDWARE += audio.primary.msm8660
-#AUDIO_HARDWARE += audio.primary.msm7627_surf
-#AUDIO_HARDWARE += audio.primary.msm7627a
-#AUDIO_HARDWARE += audio.primary.msm7630_surf
-#AUDIO_HARDWARE += audio.primary.msm7630_fusion
-#AUDIO_HARDWARE += audio.primary.default
-#AUDIO_HARDWARE += audio.a2dp.default
-#
-#AUDIO_POLICY := audio_policy.mpq8064
-#AUDIO_POLICY += audio_policy.msm8960
-AUDIO_POLICY += audio_policy.msm8660
-#AUDIO_POLICY += audio_policy.msm7627_surf
-#AUDIO_POLICY += audio_policy.msm7627a
-#AUDIO_POLICY += audio_policy.msm7630_surf
-#AUDIO_POLICY += audio_policy.msm7630_fusion
+AUDIO_HARDWARE += audio.a2dp.default
+AUDIO_POLICY += audio_policy.msm8960
 #AUDIO_POLICY += audio_policy.default
 AUDIO_POLICY += audio_policy.conf
 
@@ -144,36 +113,6 @@ IPTABLES += iptables
 #KERNEL_TESTS
 KERNEL_TESTS := mm-audio-native-test
 
-#KEYPAD
-KEYPAD := ffa-keypad_qwerty.kcm
-KEYPAD += ffa-keypad_numeric.kcm
-KEYPAD += fluid-keypad_qwerty.kcm
-KEYPAD += fluid-keypad_numeric.kcm
-KEYPAD += surf_keypad_qwerty.kcm
-KEYPAD += surf_keypad_numeric.kcm
-KEYPAD += surf_keypad.kcm
-KEYPAD += 7k_ffa_keypad.kcm
-KEYPAD += 7x27a_kp.kcm
-KEYPAD += keypad_8960_qwerty.kcm
-#KEYPAD += 7k_ffa_keypad.kl
-#KEYPAD += 7k_handset.kl
-#KEYPAD += 7x27a_kp.kl
-KEYPAD += 8660_handset.kl
-#KEYPAD += atmel_mxt_ts.kl
-#KEYPAD += cyttsp-i2c.kl
-#KEYPAD += ft5x06_ts.kl
-#KEYPAD += ffa-keypad.kl
-#KEYPAD += fluid-keypad.kl
-KEYPAD += gpio-keys.kl
-KEYPAD += keypad_8960.kl
-KEYPAD += keypad_8960_liquid.kl
-KEYPAD += Button_Jack.kl
-#KEYPAD += msm_tma300_ts.kl
-#KEYPAD += philips_remote_ir.kl
-#KEYPAD += samsung_remote_ir.kl
-#KEYPAD += surf_keypad.kl
-#KEYPAD += ue_rf4ce_remote.kl
-
 #KS
 KS := ks
 KS += qcks
@@ -182,23 +121,11 @@ KS += efsks
 #LIBCAMERA
 LIBCAMERA := libcamera
 LIBCAMERA += camera.msm8960
-LIBCAMERA += camera.msm8660
-#LIBCAMERA += camera.msm7630_surf
-#LIBCAMERA += camera.msm7630_fusion
-#LIBCAMERA += camera.msm7627a
 LIBCAMERA += libmmcamera_interface2
 LIBCAMERA += libmmjpeg_interface
 
 #LIBCOPYBIT
-LIBCOPYBIT := copybit.msm8660
 LIBCOPYBIT += copybit.msm8960
-#LIBCOPYBIT += copybit.msm7k
-LIBCOPYBIT += copybit.qsd8k
-#LIBCOPYBIT += copybit.msm7630_surf
-#LIBCOPYBIT += copybit.msm7630_fusion
-#LIBCOPYBIT += copybit.msm7627_surf
-#LIBCOPYBIT += copybit.msm7627_6x
-#LIBCOPYBIT += copybit.msm7627a
 
 #LIBGESTURES
 LIBGESTURES := libgestures
@@ -206,35 +133,14 @@ LIBGESTURES += gestures.msm8960
 
 #LIBGRALLOC
 LIBGRALLOC := gralloc.default
-LIBGRALLOC += gralloc.msm8660
 LIBGRALLOC += gralloc.msm8960
-#LIBGRALLOC += gralloc.msm7k
-#LIBGRALLOC += gralloc.msm7630_surf
-#LIBGRALLOC += gralloc.msm7630_fusion
-#LIBGRALLOC += gralloc.msm7627_surf
-#LIBGRALLOC += gralloc.msm7627_6x
-#LIBGRALLOC += gralloc.msm7627a
 #LIBGRALLOC += libmemalloc
 
 #LIBLIGHTS
-LIBLIGHTS := lights.msm8660
 LIBLIGHTS += lights.msm8960
-#LIBLIGHTS += lights.msm7k
-#LIBLIGHTS += lights.msm7630_surf
-#LIBLIGHTS += lights.msm7630_fusion
-#LIBLIGHTS += lights.msm7627_surf
-#LIBLIGHTS += lights.msm7627_6x
-#LIBLIGHTS += lights.msm7627a
 
 #LIBHWCOMPOSER
-LIBHWCOMPOSER := hwcomposer.msm8660
 LIBHWCOMPOSER += hwcomposer.msm8960
-#LIBHWCOMPOSER += hwcomposer.msm7k
-#LIBHWCOMPOSER += hwcomposer.msm7630_surf
-#LIBHWCOMPOSER += hwcomposer.msm7630_fusion
-#LIBHWCOMPOSER += hwcomposer.msm7627_surf
-#LIBHWCOMPOSER += hwcomposer.msm7627_6x
-#LIBHWCOMPOSER += hwcomposer.msm7627a
 
 #LIBAUDIOPARAM -- Exposing AudioParameter as dynamic library for SRS TruMedia to work
 LIBAUDIOPARAM := libaudioparameter
@@ -335,8 +241,7 @@ PVOMX := libqcomm_omx
 PVOMX += 01_qcomm_omx
 
 #SENSORS_HARDWARE
-SENSORS_HARDWARE := sensors.msm7630_surf
-SENSORS_HARDWARE += sensors.msm7630_fusion
+SENSORS_HARDWARE += sensors.msm8960
 
 #SOFTAP
 SOFTAP := libQWiFiSoftApCfg

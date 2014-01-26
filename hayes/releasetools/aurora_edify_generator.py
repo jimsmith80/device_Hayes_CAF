@@ -68,38 +68,12 @@ class EdifyGenerator(object):
     with temporary=True) to this one."""
     self.script.extend(other.script)
 
-  def AssertSomeFingerprint(self, *fp):
-    """Assert that the current system build fingerprint is one of *fp."""
-    if not fp:
-      raise ValueError("must specify some fingerprints")
-    cmd = ('assert(' +
-           ' ||\0'.join([('file_getprop("/system/build.prop", '
-                         '"ro.build.fingerprint") == "%s"')
-                        % i for i in fp]) +
-           ');')
-    self.script.append(self._WordWrap(cmd))
 
   def AssertOlderBuild(self, timestamp):
     """Assert that the build on the device is older (or the same as)
     the given timestamp."""
     self.script.append(('assert(!less_than_int(%s, '
                         'getprop("ro.build.date.utc")));') % (timestamp,))
-
-  def AssertDevice(self, device):
-    """Assert that the device identifier is the given string."""
-    cmd = ('assert(' +
-           ' || \0'.join(['getprop("ro.product.device") == "%s" || getprop("ro.build.product") == "%s"'
-                         % (i, i) for i in device.split(",")]) +
-           ');')
-    self.script.append(self._WordWrap(cmd))
-
-  def AssertSomeBootloader(self, *bootloaders):
-    """Asert that the bootloader version is one of *bootloaders."""
-    cmd = ("assert(" +
-           " ||\0".join(['getprop("ro.bootloader") == "%s"' % (b,)
-                         for b in bootloaders]) +
-           ");")
-    self.script.append(self._WordWrap(cmd))
 
   def RunBackup(self, command):
     self.script.append('package_extract_file("system/bin/backuptool.sh", "/tmp/backuptool.sh");')

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings version="6">
+	<system key="presidential_alerts"
+         value="1"
+    />
+	<system key="extreme_alerts"
+         value="1"
+    />	
+	<system key="severe_alerts"
+         value="1"
+    />	
+	<system key="amber_alerts"
+         value="1"
+    />	
+	<system key="cmas_test_messages"
+         value="0"
+    />
+    <system key="plus_code_number"
+         value="011"
+    />
+    <system key="plus_code_dial_enabled"
+         value="1"
+    />
+	<system key="scalibrate_x"
+         value="205"
+    />
+	<system key="scalibrate_y"
+         value="205"
+    />
+    <system key="haptic_feedback_enabled"
+         value="0"
+    />
+    <system key="lockscreen_sounds_enabled"
+         value="0"
+    />
+    <system key="screen_brightness_mode"
+         value="1"
+    />
+	<!--wangli add roaming defaults velues 201206288 begin-->  	
+	<system key="user_domes_voice"
+         value="1"
+    />		
+	<system key="user_domes_data"
+         value="1"
+    />
+	<system key="user_inter_voice"
+         value="1"
+    />
+	<system key="user_inter_data"
+         value="1"
+    />
+	<system key="user_inter_outgoing_sms"
+         value="1"
+    />	
+	<system key="user_domestic_voice"
+         value="0"
+    />
+	<system key="user_domestic_data"
+         value="0"
+    />
+	<system key="user_international_voice"
+         value="0"
+    />
+	<system key="user_international_data"
+         value="0"
+    />
+	<!--wangli add roaming defaults velues 201206288 end-->
+	<!--wangli add SPA roaming defaults velues 201206288 begin--> 	
+	<system key="enabled_domes_voice"
+         value="1"
+    />
+	<system key="enabled_domes_data"
+         value="1"
+    />
+	<system key="enabled_inter_voice"
+         value="1"
+    />
+	<system key="enabled_inter_data"
+         value="1"
+    />
+	<system key="enabled_plus_code_dial"
+         value="1"
+    />
+	<system key="enabled_domestic_voice"
+         value="1"
+    />
+	<system key="enabled_domestic_data"
+         value="1"
+    />
+	<system key="enabled_international_voice"
+         value="1"
+    />
+	<system key="enabled_international_data"
+         value="1"
+    />
+	<!--wangli add SPA roaming defaults velues 201206288 end-->
+	    <system key="time_12_24"
+         value="12"
+    />
+    <system key="screen_off_timeout"
+         value="30000"
+    />	
+</settings>
